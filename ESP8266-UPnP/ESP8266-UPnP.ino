@@ -113,7 +113,7 @@ void setup() {
       udp_receive.begin(portlocal);
       
       delay(10);
-      /* Since the response is created in the loop function, 
+      /* Since the "response" is created in the loop function, 
        * the first HTTP response will be empty. This means that 
        * every "/msearch.html" response is from the previous request. */
       HTTP.send(200, "text/plain", response); 
